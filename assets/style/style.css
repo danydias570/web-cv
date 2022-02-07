@@ -36,20 +36,26 @@ body {
 
 
 
-header {
+#header-menu {
     display: inline-block;
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    height: 60px;
+    justify-content: space-around;
+    height: 45px;
+    width: 100%;
+    z-index: 100;
+    transition: 0.3s ease-in-out;
+}
+    .anim-header-menu {
+        background-color: #333333;
+        color: lightgray;
 }
 .logo-mobile {
     display: none;
 }
 .logo {
-        margin-right: auto;
-        margin-left: 20px;
+        margin-right: 90px;
         letter-spacing: 1px;
     }
     .logo span:nth-child(1) {
@@ -82,7 +88,7 @@ header {
         content:"";
         width: 100%;
         height: 2px;
-        background-color: #1d64fd;
+        background-color: black;
         transform: scale(0);
         transition: transform .2s ease-in-out ;
     }
@@ -377,6 +383,62 @@ header {
 
 
 
+.parcoursFormations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+.parcoursFormations .separator {
+    background-color: rgb(191,200,208, 0.5);
+    width: 50%;
+}
+.parcoursFormations .separator-intern {
+    display: none;
+}
+
+.blocStudies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    width: 100%;
+}
+.blocStudies h2 {
+    font-size: 35px;
+    font-family: 'custom-bold';
+    color: #1e2024;
+}
+.blocStudies span {
+    font-family: 'custom-bold';
+    color: #455463;
+    font-size: 20px;
+}
+.btnStudies {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-family: 'custom';
+    font-weight: 900;
+    color: #1872D9;
+    cursor: pointer;
+}
+.btnStudies:hover {
+    text-decoration: underline;
+    text-underline-offset: 1px;
+}
+
+
+
+/* ------------------------------------- */
+
+
+
 .footer {
     margin: auto;
     border-top: 1px solid rgb(191,200,208, 0.2);
@@ -512,6 +574,16 @@ header {
         }
         .text-second-group span {
             font-size: 30px;
+    }
+    /* ----------------------------- */
+    .blocStudies h2 {
+        font-size: 30px;
+        }
+        .blocStudies span {
+            font-size: 18px;
+        }
+        .btnStudies {
+            font-size: 15px;
     }
     /* ----------------------------- */
     .footer {
