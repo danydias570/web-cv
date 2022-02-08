@@ -48,8 +48,9 @@ body {
     transition: 0.3s ease-in-out;
 }
     .anim-header-menu {
-        background-color: #333333;
+        background-color: rgb(51,51,51);
         color: lightgray;
+        font-size: 13px;
 }
 .logo-mobile {
     display: none;
@@ -57,6 +58,7 @@ body {
 .logo {
         margin-right: 90px;
         letter-spacing: 1px;
+        font-size: 16px;
     }
     .logo span:nth-child(1) {
         font-family: "custom-bold";
@@ -73,7 +75,7 @@ body {
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    gap: 20px;
+    gap: 25px;
     margin-right: 20px;
     }
     .menu ul li a {
@@ -419,7 +421,126 @@ body {
     color: #455463;
     font-size: 20px;
 }
-.btnStudies {
+
+
+
+/* ------------------------------------- */
+
+
+
+.modal-container {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: visibility 0.4s;
+    }
+    .modal-container.active {
+        visibility: visible;
+    }
+    .modal-container.active .overlay {
+        opacity: 1;
+        transition: opacity 0.4s ease-out;
+    }
+    .modal-container.active .modal {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.4s 0.2s ease-out,
+        transform 0.4s 0.2s ease-out;
+}
+.modal-container2 {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: visibility 0.4s;
+    }
+    .modal-container2.active {
+        visibility: visible;
+    }
+    .modal-container2.active .overlay {
+        opacity: 1;
+        transition: opacity 0.4s ease-out;
+    }
+    .modal-container2.active .modal {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.4s 0.2s ease-out,
+        transform 0.4s 0.2s ease-out;
+}
+.overlay {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #33333371;
+    transition: opacity 0.4s 0.2s ease-out;
+}
+.modal {
+    opacity: 0;
+    width: 95%;
+    max-width: 50%;
+    min-width: 50%;
+    height: auto;
+    padding: 30px;
+    backdrop-filter: blur(6px) saturate(180%);
+    -webkit-backdrop-filter: blur(6px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-radius: 5px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 50px));
+    transition: opacity 0.4s ease-out,
+    transform 0.4s ease-out;
+}
+.close-modal {
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    width: 50px;
+    font-size: 18px;
+    font-family: 'custom';
+    font-weight: 900;
+    color: #1872D9;
+    cursor: pointer;
+    }
+    .close-modal:hover {
+        text-decoration: underline;
+        text-underline-offset: 1px;
+}
+.modal h1 {
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-family: 'custom-bold';
+    }
+    .modal span {
+        font-family: 'custom-bold';
+        color: #455463;
+        font-size: 20px;
+    }
+    .modal span:nth-child(1) {
+        font-family: 'custom';
+        color: #455463;
+        font-weight: 900;
+        font-size: 18px;
+    }
+    .modal p {
+        color: #5a6876;
+        letter-spacing: 1px;
+        line-height: 27px;
+        margin-bottom: 5px;
+        font-size: 18px;
+}
+.modal-btn {
+    display: block;
     background-color: transparent;
     border: none;
     font-size: 18px;
@@ -427,10 +548,10 @@ body {
     font-weight: 900;
     color: #1872D9;
     cursor: pointer;
-}
-.btnStudies:hover {
-    text-decoration: underline;
-    text-underline-offset: 1px;
+    }
+    .modal-btn:hover {
+        text-decoration: underline;
+        text-underline-offset: 1px;
 }
 
 
@@ -583,6 +704,24 @@ body {
             font-size: 18px;
         }
         .btnStudies {
+            font-size: 15px;
+    }
+    /* ----------------------------- */
+    .modal {
+        width: 80%;
+        max-width: 80%;
+        min-width: 80%;
+    }
+    .modal h1 {
+        font-size: 30px;
+        }
+        .modal span:nth-child(1) {
+            font-size: 18px;
+        }
+        .modal span {
+            font-size: 18px;
+        }
+        .modal p {
             font-size: 15px;
     }
     /* ----------------------------- */
