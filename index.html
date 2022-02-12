@@ -1,40 +1,50 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./assets/img/myFace copie.png" />
+    <link rel="icon" type="image/png" href="./assets/img/myFace.png" />
     <link rel="stylesheet" href="./assets/style/style.css">
     <title>Accueil | Dias Design</title>
 </head>
 
 <body>
+    <!-- "HERO" SECTION -->
     <section class="container">
         <header id="header-menu">
-            <div class="logo"><a href="#"><span>dany</span><span>Dias</span></a></div>
-            <div class="logo-mobile"><a href="#"><span>d</span><span>D</span></a></div>
+            <div class="logo">
+                <a href="#"><span>dany</span><span>Dias</span></a>
+            </div>
+            <div class="logo-mobile">
+                <a href="#"><span>d</span><span>D</span></a>
+            </div>
             <nav class="menu">
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="./pages/projets.html">Projets</a></li>
-                    <li><a href="./pages/contact.html">Contact</a></li>
+                    <li>
+                        <a href="#">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="./pages/projets.html">Projets</a>
+                    </li>
+                    <li>
+                        <a href="./pages/contact.html">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </header>
-        <!-------------------------------------------->
         <div class="containerChild">
             <div class="imgProfil">
-                <img src="./assets/img/imgProfil.png" alt="">
+                <img src="./assets/img/imgProfil.png" alt="emoji iOS de Dias Dany">
             </div>
             <span>Bonjour! 👋<br>Je suis Dany.</span>
             <h1>Développeur Front End</h1>
         </div>
-        <!-------------------------------------------->
         <footer class="scrollDownFooter">Faites défiler vers le bas</footer>
     </section>
-    <section class="container">
-        <div class="first-group-text">
+    <!-- CONTENU PRINCIPAL -->
+    <main class="container">
+        <section class="first-group-text">
             <p>
                 Je m'appelle Dany Dias et je suis actuellement étudiant Développeur Intégrateur Web chez Metz Numeric School.
             </p>
@@ -44,13 +54,13 @@
             <p>
                 I show designs on Dribbble, casual pictures on Instagram and sometimes chat on my Twitter account.
             </p>
-        </div>
+        </section>
         <!-------------------------------------------->
         <div class="separator">
             <div class="separator-intern"></div>
         </div>
         <!-------------------------------------------->
-        <div class="second-group">
+        <section class="second-group">
             <div class="header-second-group">
                 <div class="img-second-group">
                     <span>🛠</span>
@@ -142,13 +152,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-------------------------------------------->
         <div class="separator">
             <div class="separator-intern"></div>
         </div>
         <!-------------------------------------------->
-        <div class="second-group">
+        <section class="second-group">
             <div class="header-second-group">
                 <div class="img-second-group">
                     <span>🎓</span>
@@ -177,22 +187,24 @@
                     <h2>Weidmann Jasalu</h2>
                     <button class="modal-btn modal-trigger2">En savoir plus</button>
                 </div>
+                </div>
             </div>
-        </div>
+        </section>
         <!-------------------------------------------->
         <div class="separator">
             <div class="separator-intern"></div>
         </div>
         <!-------------------------------------------->
-    </section>
+    </main>
+    <!-- FENÊTRES MODALES VISIBLE UNIQUEMENT LORS DU DÉCLENCHEMENT DES BUTTONS 'modal-btn'-->
     <div class="modal-container">
         <div class="overlay modal-trigger"></div>
-        <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
-            <h1 id="modalTitle">Metz Numeric School <span>2021-2022</span><br><span>Développement Web</span></h1>
-            <p id="dialogDesc">
+        <div class="modal">
+            <h1>Metz Numeric School <span>2021-2022</span><br><span>Développement Web</span></h1>
+            <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nam exercitationem nihil veritatis sapiente quia.
             </p>
-            <p id="dialogDesc">
+            <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nam exercitationem nihil veritatis sapiente quia.
             </p>
             <button aria-label="close modal" class="close-modal modal-trigger">Annuler</button>
@@ -200,32 +212,47 @@
     </div>
     <div class="modal-container2">
         <div class="overlay modal-trigger2"></div>
-        <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
-            <h1 id="modalTitle">Weidmann Jasalu <span>2016-2020</span><br><span>Serrurerie Métallerie</span></h1>
-            <p id="dialogDesc">
+        <div class="modal">
+            <h1>Weidmann Jasalu <span>2016-2020</span><br><span>Serrurerie Métallerie</span></h1>
+            <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nam exercitationem nihil veritatis sapiente quia.
             </p>
-            <p id="dialogDesc">
+            <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nam exercitationem nihil veritatis sapiente quia.
             </p>
             <button aria-label="close modal" class="close-modal modal-trigger2">Annuler</button>
         </div>
     </div>
+    <!-- PIED DE PAGE ET LINK -->
     <footer class="footer">
         <div class="designedPart">
             <span>© Handcrafted in France, code & developement by<br>Dany Dias, 2022</span>
         </div>
-        <div class="linkPart">
+        <nav class="linkPart">
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="./pages/projets.html">Projets</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
-                <li>●</li>
-                <li><a href="https://dribbble.com/danydias" target="_blank">Dribbble</a></li>
-                <li><a href="">Linkedin</a></li>
-                <li><a href="https://github.com/danydias570" target="_blank">GitHub</a></li>
+                <li>
+                    <a href="#">Accueil</a>
+                </li>
+                <li>
+                    <a href="./pages/projets.html">Projets</a>
+                </li>
+                <li>
+                    <a href="./pages/contact.html">Contact</a>
+                </li>
+                <li>
+                    ●
+                </li>
+                <li>
+                    <a href="https://dribbble.com/danydias" target="_blank">Dribbble</a>
+                </li>
+                <li>
+                    <a href="">Linkedin</a>
+                </li>
+                <li>
+                    <a href="https://github.com/danydias570" target="_blank">GitHub</a>
+                </li>
             </ul>
-        </div>
+        </nav>
     </footer>
 <script src="./assets/script.js"></script>
 </body>
