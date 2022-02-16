@@ -1,0 +1,3 @@
+
+- Animer les éléments des pages au scroll (sur y) en js.
+- Faire l'architecture des pages 'Contact' et 'Projets'.
