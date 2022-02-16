@@ -1,3 +1,12 @@
+.scrollDownFooter {
+    display: none;
+}
+
+
+
+/* ------------------------------------- */
+
+
 
 .container-hero {
     width: 100%;
@@ -7,7 +16,6 @@
     align-items: center;
 }
 .imgProfil {
-    position: relative;
     overflow: hidden;
 }
 .imgProfil span {
@@ -21,6 +29,9 @@
     text-align: center;
 }
 
+
+
+/* ------------------------------------- */
 
 
 
@@ -45,17 +56,16 @@
 }
 .containerProjectsChild {
     position: relative;
-    background-color: #f7f7f7;
-    box-shadow: 9.91px 9.91px 15px #D9DADE, -9.91px -9.91px 15px #FFFFFF;
+    background-color: #2f3437;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border: 20px solid #f7fafd;
     width: 350px;
     height: 350px;
     margin-bottom: 30px;
-    cursor: pointer;
     overflow: hidden;
 }
 .containerProjectsChild:hover .imgProjects {
-    transform: scale(1.1);
+    transform: scale(1.07);
 }
 .imgProjects {
     background-image: url('../img/dashboard-n26.png');
@@ -67,6 +77,10 @@
     transform: scale(1);
     will-change: transform;
 }
+.containerProjects:nth-child(2) .imgProjects {
+    background-image: url('../img/calculatrice-ios.png');
+    background-position: center;
+}
 .containerProjects span {
     color: #455463;
     font-weight: 900;
@@ -76,7 +90,7 @@
 
 
 
-
+/* ------------------------------------- */
 
 
 

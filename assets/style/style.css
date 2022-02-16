@@ -594,7 +594,7 @@ body {
     color: inherit;
     }
     .linkPart li a:hover {
-        color: #1d64fd;
+        text-decoration: underline;
     }
     .linkPart li:nth-child(4) {
         font-size: 3px;

@@ -4,23 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../assets/img/myFace copie.png" />
+    <link rel="icon" type="image/png" href="../assets/img/myFace.png" />
     <link rel="stylesheet" href="../assets/style/style.css">
-    <title>Contact | Dias Design</title>
+    <link rel="stylesheet" href="../assets/style/contact.css">
+    <title>Contact | Dias Dany</title>
 </head>
 
 <body>
-    <header id ="header-menu">
-        <div class="logo"><a href="/index.html"><span>dany</span><span>Dias</span></a></div>
-        <div class="logo-mobile"><a href="/index.html"><span>d</span><span>D</span></a></div>
-        <nav class="menu">
-            <ul>
-                <li><a href="/index.html">Accueil</a></li>
-                <li><a href="../pages/projets.html">Projets</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section class="container">
+        <header id ="header-menu">
+            <div class="logo"><a href="/index.html">
+                <span>dany</span><span>Dias</span></a>
+            </div>
+            <div class="logo-mobile">
+                <a href="/index.html"><span>d</span><span>D</span></a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="/index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="../pages/projets.html">Projets</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="containerChild">
+            <div class="imgProfil">
+                <span>📝</span>
+            </div>
+            <span>Contact</span>
+            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint maiores, quis deserunt tempore commodi nulla.</h1>
+        </div>
+        <footer class="scrollDownFooter">Faites défiler vers le bas</footer>
+    </section>
+
+
+
+    <main>
+        <div class="container-form">
+            <span>* Tout les champs sont requis</span>
+            <form action="/action_page.php">
+              <label for="fname">Nom</label>
+              <input type="text" id="fname" name="firstname" placeholder="Votre Nom">
+          
+              <label for="sujet">Sujet</label>
+              <input type="text" id="Subject" name="sujet" placeholder="Objet de votre message">
+          
+              <label for="emailAddress">Email</label>
+              <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+          
+          
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+          
+              <input type="submit" value="Envoyer">
+            </form>
+        </div>
+    </main>
+
+
     <footer class="footer">
         <div class="designedPart">
             <span>© Handcrafted in France, code & developement by<br>Dany Dias, 2022</span>
@@ -37,5 +84,6 @@
             </ul>
         </nav>
     </footer>
+<script src="../assets/script.js"></script>
 </body>
 </html>
