@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Envoi d'un message par formulaire</title>
+    <title>Envoi d'un mail par formulaire</title>
 </head>
 
 <body>
