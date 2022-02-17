@@ -17,9 +17,12 @@
     align-items: center;
 }
 .imgProfil {
+    position: relative;
     overflow: hidden;
 }
 .imgProfil span {
+    position: absolute;
+    top: -40px;
     font-size: 140px;
     opacity: 0;
     transform: translateY(0px);
@@ -101,6 +104,7 @@
     }
     .imgProfil span {
         position: absolute;
+        top: -30px;
         left: 0;
         font-size: 100px;
     }
