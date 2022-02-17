@@ -53,6 +53,12 @@
               <input id="emailAddress" type="email" name="email" placeholder="Votre email" required>
               <label for="subject">Message</label>
               <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px" required></textarea>
+              <textarea name="message" placeholder="Type your Message">
+              <div>
+                    <p class="success"> <?php echo $success;  ?></p>
+                    <p class="failed"> <?php echo $failed;  ?></p>
+                </div>
+       
               <input type="submit" name="submit" value="Envoyer">
             </form>
         </div>
