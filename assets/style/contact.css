@@ -107,6 +107,18 @@ label {
     width: 100%;
     color: #455463;
 }
+.success{
+    color: green;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+}
+.failed{
+    color: red;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+}
 
 
 
