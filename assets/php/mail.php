@@ -6,13 +6,45 @@
 </head>
 
 <body>
-    <?php
-    $retour = mail('contact@diasdany.fr', 'Envoi depuis la page Contact', $_POST['firstname'], $_POST['sujet'], $_POST['email'], $_POST['subject'], 'From: https://danydias570.github.io/web-cv/');
-    if ($retour)
-        echo '<p>Votre message a bien été envoyé.</p>';
-    $entete  = 'MIME-Version: 1.0' . "\r\n";
-    $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-    $entete .= 'Reply-to: ' . $_POST['email'];
-    ?>
+<?php  
+ 
+ if(isset($_POST['submit'])) {
+  $mailto = "contact@diasdany.fr";
+  $name = $_POST['firstname'];
+  $fromEmail = $_POST['email'];
+  $subject = $_POST['sujet'];
+  $subject2 = "Confirmation: Message was submitted successfully | HMA WebDesign";
+  
+  //Email body I will receive
+  $message = "Cleint Name: " . $name . "\n"
+  . "Phone Number: ". "\n\n"
+  . "Client Message: " . "\n" . $_POST['subject'];
+  
+  //Message for client confirmation
+  $message2 = "Dear" . $name . "\n"
+  . "Thank you for contacting us. We will get back to you shortly!" . "\n\n"
+  . "You submitted the following message: " . "\n" . $_POST['subject'] . "\n\n"
+  . "Regards," . "\n" . "- HMA WebDesign";
+  
+  //Email headers
+  $headers = "From: " . $fromEmail; // Client email, I will receive
+  $headers2 = "From: " . $mailto; // This will receive client
+  
+  //PHP mailer function
+  
+   $result1 = mail($mailto, $subject, $message, $headers); // This email sent to My address
+   $result2 = mail($fromEmail, $subject2, $message2, $headers2); //This confirmation email to client
+  
+   //Checking if Mails sent successfully
+  
+   if ($result1 && $result2) {
+     $success = "Your Message was sent Successfully!";
+   } else {
+     $failed = "Sorry! Message was not sent, Try again Later.";
+   }
+  
+ }
+  
+ ?>
 </body>
 </html>
