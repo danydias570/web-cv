@@ -16,13 +16,9 @@
         $sujet = $_POST['sujet'];
         $from = $_POST['email'];
         $subject = $_POST['subject'];
-        $subject2 = "Votre message s'est bien envoyé.";
-        $message = "Nom Client: ". $name. "A écrit ce message". "\n\n". $_POST['subject'];
-        $message2 = "Cher ".$name. "\n\n" ."merci pour votre message, à  bienôt.";
+        $message = "Nom et Prénom: ". $name. "\n\n". "Mail: ". $from. "\n\n". "\n\n". $_POST['subject'];
         $headers = "De: ". $from;
-        $headers2 = "De: ". $mailto;
-        $result = mail($mailto, $sujet, $subject, $headers);
-        $result2 = mail($from, $subject2, $message2,$headers2);
+        $result = mail($mailto, $sujet, $message, $headers);
         header('Location: https://diasdany.fr/pages/redirection.html');
         exit();
     }

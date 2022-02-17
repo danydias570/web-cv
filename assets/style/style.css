@@ -482,11 +482,10 @@ body {
         transform 0.4s 0.2s ease-out;
 }
 .overlay {
-    opacity: 0;
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #33333371;
+    background: rgba(169, 169, 169, 0.56);
     transition: opacity 0.4s 0.2s ease-out;
 }
 .modal {
@@ -514,7 +513,7 @@ body {
     background-color: transparent;
     border: none;
     margin: auto;
-    width: 50px;
+    width: 100%;
     font-size: 18px;
     font-family: 'custom';
     font-weight: 900;
