@@ -1,3 +1,2 @@
 
 - Animer les éléments des pages au scroll (sur y) en js.
-- Faire l'architecture de la page 'Contact'.
