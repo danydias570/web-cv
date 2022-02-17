@@ -43,7 +43,7 @@
      $failed = "Sorry! Message was not sent, Try again Later.";
    }
   
- }
+}
   
  ?>
 </body>
